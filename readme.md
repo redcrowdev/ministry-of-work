@@ -11,3 +11,14 @@ I am new on Python and development in general, and I think this is a fun project
 When I get the functionality I desire from this code, I will leave it as it is, and if you, for any reason is reading this and the code, feel free to comment and suggest improvements.
 
 But really, this is something I will drop here and leave as a reminder of my days learning Python.
+
+## Install
+---
+For this project to work you will need to install 3 libraries: art, textBlob (and an add-on) and pyttsx3
+
+```Python
+pip install art
+pip install textblob
+python -m textblob.download_corpora
+pip install pyttsx3
+```
