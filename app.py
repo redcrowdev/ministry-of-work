@@ -29,6 +29,8 @@ def failed_to_comply():
     engine.say('Have a good day!')
     engine.runAndWait()
 
+# define check_polarity function
+
 
 def check_polarity(polarity):
     if polarity < 0.3:
@@ -77,7 +79,7 @@ while True:
             blank_name += 1
             continue
         elif blank_name == 2:
-            print(art.art('angry'))
+            print(art.art('sad'))
             print('The Ministry of Work needs you to specify your name. If you fail to comply you will be terminated.')
             engine.say(
                 'The Ministry of Work needs you to specify your name. If you fail to comply you will be terminated.')
@@ -85,6 +87,7 @@ while True:
             blank_name += 1
             continue
         else:
+            print(art.art('angry'))
             failed_to_comply()
             exit()
     break
